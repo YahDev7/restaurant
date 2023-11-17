@@ -1,23 +1,27 @@
-import { UseColors } from "../../hooks/colors";
+import { Navigate } from "react-router-dom";
+import { UseColors } from "../../hooks/Colors";
 import Loader from "./Loader";
+import { UseRedirect } from "../../hooks/redirects";
 
 
 const Header = () => {
     const { primaryColor, iconMenu, secondColor,widthIcons,iconuser,iconBuy,iconPhone } = UseColors()
+    const {redirectCarrito} =UseRedirect()
     const navi = [
         "Productos",
         "contacto"
-
     ]
+
     return (
         <>
-            <header  className="fixed z-30 w-[100%]">
+            <header  className="fixed z-30 w-[100%] shadow-md">
                 <div className="h-[89px] max-w-[1500px] !w-[88%] m-auto">
                     <div className="!h-[100%] grid grid-cols-3 place-content-center ">
-                        <div className=" grid grid-cols-5 place-items-center">
-                            <span className="border-[1px] rounded-full pt-3 pb-3 p-2 border-gray-800">
-                                <img src={iconMenu} width={widthIcons} alt="" />
+                        <div className=" grid grid-cols-5 max-md:grid-cols-3 place-items-center">
+                            <span className="border-[1px] max-sm:p-1.5 rounded-full pt-3 pb-3 p-2 border-gray-800">
+                                <img className="max-sm:w-[15px]" src={iconMenu} width={widthIcons} alt="" />
                             </span>
+                            <span className=" font-semibold cursor-pointer max-sm:w-[20px]"><a href="#/home">LOGO</a></span>
                            {/*  {
                                 navi.map((el, index) => <span className=" font-semibold" key={index}>{el}</span>)
                             } */}
@@ -31,8 +35,8 @@ const Header = () => {
                         </div>
 
                         <div className="grid max-lg:grid-cols-3 grid-cols-8 max-lg:place-content-center justify-items-end place-items-center">
-                            <span className="col-start-6  max-lg:col-start-2 border-[1px] rounded-full p-2 border-gray-800" ><img width={widthIcons} src={iconuser} alt="" /></span>
-                            <span className="!border-[1px] rounded-full p-2 border-gray-800"><img width={widthIcons} src={iconBuy} alt="" /></span>
+                            <span className="col-start-6  max-lg:col-start-2 border-[1px] rounded-full p-2 border-gray-800" ><img className="max-sm:w-[15px]" width={widthIcons} src={iconuser} alt="" /></span>
+                            <span onClick={()=>redirectCarrito()} className="!border-[1px] rounded-full p-2 border-gray-800"><img className="max-sm:w-[15px]" width={widthIcons} src={iconBuy} alt="" /></span>
                         </div>
                            
 

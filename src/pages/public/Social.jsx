@@ -1,4 +1,4 @@
-import { UseColors } from "../../hooks/colors";
+import { UseColors } from "../../hooks/Colors";
 
 
 const Social = () => {

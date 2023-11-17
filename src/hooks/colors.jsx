@@ -14,9 +14,12 @@ export const UseColors = () => {
   const [iconPhone, seticonPhone] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1699808308/Restaurant/Public_icons/Vector-2_toscdh.svg");
   const [iconuser, seticonuser] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1699808308/Restaurant/Public_icons/Vector_zerrd8.svg");
   const [iconBuy, seticonBuy] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1699808782/Restaurant/Public_icons/Vector_ws6zol.svg");
+  const [iconDelete, seticonDelete] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1700233744/Restaurant/Public_icons/MaterialSymbolsDeleteOutlineRounded_bydl0g.svg");
 
   const [iconMenu, seticonMenu] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1699809558/Restaurant/Public_icons/Group_498_xwk8wg.svg");
-
+  const [iconCarr, seticonCarr] = useState("https://res.cloudinary.com/dths6glis/image/upload/v1699802124/Restaurant/Public_icons/BytesizeCart_iah6s6.svg");
+  const [iconEye, seticonEye] = useState("  https://res.cloudinary.com/dths6glis/image/upload/v1699802120/Restaurant/Public_icons/PhEyeLight_isthts.svg");
+  
 
 
   return {
@@ -30,6 +33,9 @@ export const UseColors = () => {
     contentGlobal,
     fb,
     ig,
-    tiktok
+    tiktok,
+    iconCarr,
+    iconEye,
+    iconDelete
   };
 }

@@ -1,4 +1,4 @@
-import { UseColors } from "../../hooks/colors";
+import { UseColors } from "../../hooks/Colors";
 
 
 const Banner = () => {
@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <section className={`relative ${primaryColor} !w-[100%] h-[100vh]`} >
             <div className="relative z-10 max-w-[1500px] m-auto !w-[88%] h-[100%] max-lg:grid-cols-1  place-items-center place-content-center grid grid-cols-2 ">
-                <div className=" w-[100%]  max-lg:h-[300px] lg:h-[500px]">
+                <div className=" w-[100%] max-lg:h-[300px] lg:h-[500px]">
                  <div className="">
                         <h2 className="lg:text-[80px] max-lg:text-[50px]  max-sm:text-[45px] font-bold max-lg:text-center" >Lo más delicioso</h2>
                         <h2 className="max-lg:text-center"> <strong className={`text-[75px] max-sm:text-[40px] !text-[#7AB5FB]  `}>JAÉN</strong></h2>
