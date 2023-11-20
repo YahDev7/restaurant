@@ -9,7 +9,7 @@ const Extra = () => {
     ]
 
     return (
-        <section className="relative w-[100%] pb-24 z-50">
+        <section className="relative w-[100%] pb-24 z-30">
             <div className="grid grid-cols-3  max-md:grid-cols-1 max-lg:grid-cols-2 gap-20 pt-14  max-w-[1500px] !w-[88%] m-auto">
                 {
                     extra.map((el) =>

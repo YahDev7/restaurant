@@ -17,10 +17,10 @@ const Categoria = () => {
 
     <section className=" w-[100%] pt-[150px]">
       {StateModal &&
-            <ModalProd toggleModalProd={toggleModalProd}/>
+        <ModalProd toggleModalProd={toggleModalProd} />
 
 
-        }
+      }
       <div className=" w-[88%] m-auto max-w-[1500px]">
         <h2 className=" ps-3 text-[30px] font-bold text-blue-400">Categorias</h2>
 

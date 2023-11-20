@@ -1,3 +1,5 @@
+import SidebarCarrito from "../../components/Sidebar/Sidebar.carrito";
+import Sidebar from "../../components/sidebar/Sidebar";
 import Header from "../public/header";
 import Social from "../public/social";
 import Banner from "./Banner";
@@ -8,7 +10,9 @@ import Tops from "./Tops";
 const Home = () => {
     return (
         <div>
-            <Header></Header> 
+            <Sidebar ></Sidebar>
+            <SidebarCarrito></SidebarCarrito>          
+            <Header ></Header> 
             <Banner></Banner>
              <Social></Social>  
             <Extra></Extra>
@@ -18,5 +22,4 @@ const Home = () => {
         </div>
     );
 }
-
 export default Home;

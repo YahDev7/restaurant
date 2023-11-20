@@ -6,7 +6,7 @@ const Social = () => {
 
     let redesSociales = [fb, ig, tiktok]
     return (
-        <article className=" top-[30%] right-0 fixed z-[1000] bg-white p-2 pt-6 rounded-l-[20px]">
+        <article className=" top-[30%] right-0 fixed z-40 bg-white p-2 pt-6 rounded-l-[20px]">
             <ul>
                 {redesSociales.map((el) =>
                     <li className="pb-6">

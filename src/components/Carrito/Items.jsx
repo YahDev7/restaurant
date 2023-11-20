@@ -22,7 +22,7 @@ const Items = () => {
 
                     <p>2</p>
                     <p>S/400</p>
-                    <button className="bg-blue-400 rounded-xl p-1.5 max-sm:p-1"> <img className="max-sm:w-[25px]" width={`30px`} src={iconDelete} alt="" /></button>
+                    <button className="bg-blue-400 rounded-xl p-1.5 max-sm:p-1 hover:bg-blue-500 transition-all"> <img className="max-sm:w-[25px]" width={`30px`} src={iconDelete} alt="" /></button>
                 </div>
             </article>
         </div>

@@ -10,7 +10,7 @@ const ProductComp = ({ el,toggleModalProd }) => {
                 <div className="grid place-items-center w-[100%] opacity-0 hover:opacity-100 bg-[rgb(85,85,85,50%)] h-[100%] absolute">
                     <p className="text-white hover:scale-150 transition-all" onClick={(e)=>{e.stopPropagation();toggleModalProd()}}><img width="30px" src={iconEye} alt="" /></p>
                 </div>
-                 <img src={el.img} className=" object-cover w-[500px] max-sm:h-[110px] sm:h-[200px] " alt="" /> 
+                 <img src={el.img} className="rounded-xl object-cover w-[500px] max-sm:h-[110px] sm:h-[200px] " alt="" /> 
             </a>
             <p className="font-semibold text-[20px] pt-4">{el.title}</p>
             <div className="grid grid-cols-2">
